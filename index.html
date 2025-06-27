@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renault Motors - Concesionario Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b62e4a25-c32a-4289-9df4-d5f2f93db567.png') no-repeat center center;
+            background-size: cover;
+            height: 70vh;
+        }
+        
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .whatsapp-btn {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae8f1142-9c7b-4dba-bbd7-41f1cb7473a2.png" alt="Logo oficial de Renault Motors en color amarillo sobre fondo blanco" class="h-12">
+                    <span class="text-xl font-bold text-gray-800 hidden md:block">Renault Motors</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-800 hover:text-yellow-500 font-medium">Inicio</a>
+                    <a href="#catalogo" class="text-gray-800 hover:text-yellow-500 font-medium">Catálogo</a>
+                    <a href="#contacto" class="text-gray-800 hover:text-yellow-500 font-medium">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none" id="menu-btn">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden bg-white w-full absolute z-20" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#inicio" class="block py-2 text-gray-800 hover:bg-gray-100 rounded px-2">Inicio</a>
+                <a href="#catalogo" class="block py-2 text-gray-800 hover:bg-gray-100 rounded px-2">Catálogo</a>
+                <a href="#contacto" class="block py-2 text-gray-800 hover:bg-gray-100 rounded px-2">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section flex items-center justify-center text-center text-white">
+        <div class="px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Descubre el placer de conducir</h1>
+            <p class="text-xl md:text-2xl mb-8">Los mejores modelos Renault con las mejores condiciones de financiación</p>
+            <a href="#catalogo" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Ver modelos</a>
+        </div>
+    </section>
+
+    <!-- Featured Models -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Modelos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Model 1 -->
+                <div class="car-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0a0eb91-ce1e-4758-b616-8040874017ef.png" alt="Renault Kwid 2023 en color rojo, vista frontal mostrando diseño moderno y compacto" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-bold mt-4 text-gray-800">Renault Kwid</h3>
+                        <p class="text-gray-600 mt-2">SUV compacto ideal para la ciudad</p>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="fas fa-gas-pump"></i> 16 km/l</span>
+                                <span><i class="fas fa-cogs"></i> Manual/Automático</span>
+                                <span><i class="fas fa-car"></i> 5 plazas</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-2xl font-bold text-yellow-500">Desde $210,900</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 px-4 py-3 text-center">
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-medium py-2 px-6 rounded-full transition duration-300 w-full">Cotizar</button>
+                    </div>
+                </div>
+
+                <!-- Model 2 -->
+                <div class="car-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b845ab1-d094-4585-a049-2b3cac199b86.png" alt="Renault Logan 2023 en color gris plateado, vista lateral mostrando amplio espacio y diseño elegante" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-bold mt-4 text-gray-800">Renault Logan</h3>
+                        <p class="text-gray-600 mt-2">Sedán económico con amplio espacio</p>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="fas fa-gas-pump"></i> 14 km/l</span>
+                                <span><i class="fas fa-cogs"></i> Manual/Automático</span>
+                                <span><i class="fas fa-car"></i> 5 plazas</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-2xl font-bold text-yellow-500">Desde $279,900</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 px-4 py-3 text-center">
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-medium py-2 px-6 rounded-full transition duration-300 w-full">Cotizar</button>
+                    </div>
+                </div>
+
+                <!-- Model 3 -->
+                <div class="car-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="p-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9084848-50a0-4c13-a2be-2b3f17bb1e90.png" alt="Renault Duster 2023 en color azul, vista frontal mostrando diseño robusto y deportivo" class="w-full h-48 object-cover rounded-lg">
+                        <h3 class="text-xl font-bold mt-4 text-gray-800">Renault Duster</h3>
+                        <p class="text-gray-600 mt-2">SUV familiar con gran desempeño</p>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span><i class="fas fa-gas-pump"></i> 12 km/l</span>
+                                <span><i class="fas fa-cogs"></i> Manual/Automático</span>
+                                <span><i class="fas fa-car"></i> 5 plazas</span>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-2xl font-bold text-yellow-500">Desde $389,900</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 px-4 py-3 text-center">
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-medium py-2 px-6 rounded-full transition duration-300 w-full">Cotizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Catalog -->
+    <section id="catalogo" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Catálogo Completo Renault</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Descubre todos nuestros modelos disponibles con sus especificaciones técnicas completas</p>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-yellow-500 text-gray-900">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Modelo</th>
+                            <th class="py-4 px-6 text-left">Motor</th>
+                            <th class="py-4 px-6 text-left">Transmisión</th>
+                            <th class="py-4 px-6 text-left">Consumo</th>
+                            <th class="py-4 px-6 text-left">Precio</th>
+                            <th class="py-4 px-6 text-left">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad4bb95a-e0dc-4e76-bc87-e022a867e370.png" alt="Miniatura Renault Kwid" class="h-10 w-16 object-cover mr-4 rounded">
+                                    <span>Renault Kwid</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.0L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6">16 km/l</td>
+                            <td class="py-4 px-6 font-bold">$210,900</td>
+                            <td class="py-4 px-6">
+                                <button class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e50fa095-8e7a-480f-9ca5-fce3db05ba94.png" alt="Miniatura Renault Logan" class="h-10 w-16 object-cover mr-4 rounded">
+                                    <span>Renault Logan</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6">14 km/l</td>
+                            <td class="py-4 px-6 font-bold">$279,900</td>
+                            <td class="py-4 px-6">
+                                <button class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4f60d933-19cd-4d0e-970b-374399ae78f1.png" alt="Miniatura Renault Duster" class="h-10 w-16 object-cover mr-4 rounded">
+                                    <span>Renault Duster</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">2.0L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6">12 km/l</td>
+                            <td class="py-4 px-6 font-bold">$389,900</td>
+                            <td class="py-4 px-6">
+                                <button class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7fdb3ab9-502e-4f38-b940-e4a22ecb097f.png" alt="Miniatura Renault Sandero" class="h-10 w-16 object-cover mr-4 rounded">
+                                    <span>Renault Sandero</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6">15 km/l</td>
+                            <td class="py-4 px-6 font-bold">$269,900</td>
+                            <td class="py-4 px-6">
+                                <button class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/412a64d4-4e2d-4fbf-a2f8-870cb5bcffe4.png" alt="Miniatura Renault Stepway" class="h-10 w-16 object-cover mr-4 rounded">
+                                    <span>Renault Stepway</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6">14 km/l</td>
+                            <td class="py-4 px-6 font-bold">$329,900</td>
+                            <td class="py-4 px-6">
+                                <button class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contáctanos</h2>
+                    <p class="text-gray-600 mb-6">Estamos aquí para ayudarte a encontrar el Renault perfecto para ti. Visítanos en nuestro concesionario o contáctanos directamente.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-100 rounded-full p-2">
+                                <svg class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium text-gray-900">Dirección</h3>
+                                <p class="text-sm text-gray-500">Av. Automotriz 123, Ciudad de México</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-100 rounded-full p-2">
+                                <svg class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium text-gray-900">Teléfono</h3>
+                                <p class="text-sm text-gray-500">55 1234 5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-yellow-100 rounded-full p-2">
+                                <svg class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium text-gray-900">Correo</h3>
+                                <p class="text-sm text-gray-500">ventas@renaultmotors.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <div class="bg-gray-100 rounded-lg p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Formulario de contacto</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-4 rounded transition duration-300">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <div class="fixed bottom-6 right-6">
+        <a href="https://wa.me/52[TU_NUMERO]" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg inline-flex items-center transition duration-300">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-10.01-7.288c-.041.001-.108.007-.192.016-.293.027-.748.078-1.205.407-.477.344-.747.812-.79 1.296-.036.403.098.786.265 1.125.167.343.39.653.563.903.331.478.716.943.716.943s-.293 1.287.116 1.912c.34.532.934.922 1.466 1.173.22.104.46.216.696.31.368.146.725.255 1.054.312.783.137 1.437.089 1.701.033.543-.114.954-.38 1.228-.65.295-.291.478-.619.565-.87.1-.297.137-.577.118-.86-.03-.429-.25-.833-.68-1.132-.184-.129-.449-.187-.749-.095-.344.105-.637.399-1.046.701-.361.266-.691.487-.941.532-.242.043-.526-.037-.762-.276-.239-.243-.778-.796-1.127-1.18-.346-.383-.6-.566-.69-.65-.088-.084-.15-.145-.208-.198l-.027-.025-.007-.006-.002-.002-.184-.14-.037-.035c-.09-.08-.216-.192-.383-.344-.272-.249-.537-.465-.806-.681-.668-.542-1.242-1.166-1.454-1.904-.122-.421-.066-.858.125-1.22.165-.308.4-.526.644-.627.259-.105.499-.121.734-.123z"/>
+            </svg>
+            <span class="ml-2 hidden md:inline-block">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9a8b0d81-a629-441c-bcad-efbb934b196c.png" alt="Logo Renault blanco sobre fondo negro" class="h-12 mb-4">
+                    <p class="text-gray-400">Concesionario oficial Renault con los mejores precios y garantías en México.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Horario</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lunes a Viernes: 9:00 - 19:00</li>
+                        <li>Sábados: 10:00 - 16:00</li>
+                        <li>Domingos: Cerrado</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-yellow-500">Aviso de privacidad</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Términos y condiciones</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Financiamiento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>©️ <span id="current-year">2023</span> Renault Motors. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Hide mobile menu after click
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
