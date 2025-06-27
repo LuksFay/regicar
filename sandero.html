@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renault Sandero - Detalle del Modelo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+    body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+    .whatsapp-btn { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Renault_2021.svg" alt="Logo Renault" class="h-12">
+        <span class="text-xl font-bold text-gray-800 hidden md:block">Renault</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html#inicio" class="text-gray-800 hover:text-yellow-500 font-medium">Inicio</a>
+        <a href="index.html#catalogo" class="text-gray-800 hover:text-yellow-500 font-medium">Catálogo</a>
+        <a href="index.html#contacto" class="text-gray-800 hover:text-yellow-500 font-medium">Contacto</a>
+      </div>
+      <button class="md:hidden text-gray-800 focus:outline-none" id="menu-btn">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="hidden bg-white w-full absolute z-20" id="mobile-menu">
+      <div class="px-4 py-2 space-y-2">
+        <a href="index.html#inicio" class="block py-2 text-gray-800 hover:bg-gray-100 rounded px-2">Inicio</a>
+        <a href="index.html#catalogo" class="block py-2 text-gray-800 hover:bg-gray-100 rounded px-2">Catálogo</a>
+        <a href="index.html#contacto" class="block py-2 text-gray-800 hover:bg-gray-100 rounded px-2">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7fdb3ab9-502e-4f38-b940-e4a22ecb097f.png"
+           alt="Renault Sandero 2023" class="rounded-lg shadow-lg">
+      <div>
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Renault Sandero 2023</h1>
+        <p class="text-gray-600 text-lg mb-6">
+          El Sandero combina practicidad y confort en un hatchback espacioso. Ideal para la familia urbana con gran maletero y versatilidad.
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Motor:</strong> 1.6L SCe</li>
+          <li><strong>Transmisión:</strong> Manual / Automática</li>
+          <li><strong>Consumo:</strong> 15 km/l</li>
+          <li><strong>Capacidad:</strong> 5 plazas</li>
+          <li><strong>Precio desde:</strong> <span class="text-yellow-500 font-bold">$269,900</span></li>
+        </ul>
+        <div class="mt-8">
+          <a href="https://wa.me/5493415059240?text=Hola%2C%20quiero%20m%C3%A1s%20info%20sobre%20el%20Renault%20Sandero"
+             target="_blank"
+             class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition duration-300 whatsapp-btn">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9a8b0d81-a629-441c-bcad-efbb934b196c.png"
+             alt="Logo Renault blanco" class="h-12 mb-4">
+        <p class="text-gray-400">Concesionario oficial Renault con los mejores precios y garantías en Argentina.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Horario</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li>Lunes a Viernes: 9:00 - 19:00</li>
+          <li>Sábados: 10:00 - 16:00</li>
+          <li>Domingos: Cerrado</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Legal</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#" class="hover:text-yellow-500">Aviso de privacidad</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Términos y condiciones</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Financiamiento</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+      <p>©️ <span id="current-year">2023</span> Renault Motors. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      document.body.classList.toggle('overflow-hidden');
+    });
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
